@@ -15,9 +15,9 @@
 | 5/18 | 第一階段 `架構確認` | PPT: `緣起` `目標使用者` `功能架構(使用技術: 前台/後台/RWD)` `flowchart (FINAL)` | review `功能` `是否增加其他功能` | @all |
 | 5/21 | 第二階段 `架構草圖` | `wireframe製作` | PC + MOBILE | **TBD** |
 | 5/22 |  | `mockup製作` | HTML/CSS開始分工coding | **TBD** |
-| 5/22 | **報告** | `PPT` 'wireframe' |
+| 5/22 | **報告** | `PPT` `wireframe` |
 | 5/24 | 第二階段 `架構草圖` | `Use Case Diagram` `ERD` `Table Specification` `分工表` |  | **TBD** |
-| 5/27 | **檢查** | 郭老師 review `Use Case Diagram' |
+| 5/27 | **檢查** | 郭老師 review `Use Case Diagram` |
 | 5/27 | **檢查** | Bryan review `介面進度` | 部分JS開始分工進行 |
 | 5/27 | **檢查** | 郭老師 review `ERD` `Table Specification` `分工表` |
 | 5/30 | 第三階段 `網頁實現` | `HTML` `CSS` 完成 | | @all |

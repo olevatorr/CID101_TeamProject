@@ -11,7 +11,7 @@
 | 5/11 | 主題與方向  | 主題訂定 | |  @all |
 | 5/13 |  | 決定`主題方向` `功能` `族群` `其他特殊功能` `風格` | 討論分工和開始蒐集圖和影片 | @all |
 | 5/15 | 第一階段 `架構確認` | `flowchart` | 前台、後台和行動版都要 | @all |
-| 5/17 | **專題企劃** | 郭老師 review `flowchart` |
+| 5/17 | **專題企劃** | 郭老師 review `flowchart` | 開始畫wireframe |
 | 5/18 | 第一階段 `架構確認` | PPT: `緣起` `目標使用者` `功能架構(使用技術: 前台/後台/RWD)` `flowchart (FINAL)` | review `功能` `是否增加其他功能` | @all |
 | 5/21 | 第二階段 `架構草圖` | `wireframe製作` | PC + MOBILE | **TBD** |
 | 5/22 |  | `mockup製作` | HTML/CSS開始分工coding | **TBD** |

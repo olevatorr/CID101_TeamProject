@@ -38,3 +38,4 @@
 <img src="https://cdn.iconscout.com/icon/free/png-256/free-vuejs-1175052.png?f=webp" height="100px">
 <img src="https://cdn.worldvectorlogo.com/logos/jquery-ui.svg" height="100px">
 <img src="https://raw.githubusercontent.com/d3/d3-logo/master/d3.png" height="100px">
+<img src="https://bootstrap-vue.org/_nuxt/icons/icon_512x512.67aef2.png" height="100px">

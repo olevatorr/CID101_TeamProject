@@ -1,0 +1,11 @@
+@import "base/var";
+@import "base/reset";
+@import "base/font";
+@import "base/grid";
+@import "base/rwd";
+
+// 其他全局樣式或特定頁面的樣式
+section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}

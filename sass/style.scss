@@ -1,3 +1,4 @@
+// base 基本設置
 @import "base/var";
 @import "base/reset";
 @import "base/font";
@@ -9,3 +10,16 @@ section {
     padding-top: 4rem;
     padding-bottom: 4rem;
 }
+
+// component 元件
+@import "component/eventcard";
+@import "component/itemcard";
+@import "component/newscard";
+
+// layout 共用nav / footer
+@import "layout/nav";
+@import "layout/footer";
+
+// page 各頁
+@import "page/index";
+@import "page/aboutus";

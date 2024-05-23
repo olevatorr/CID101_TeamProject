@@ -73,7 +73,7 @@ input[type="button"] {
     letter-spacing: $letter-spacing-heading;
     line-height: $line-height-heading;
     font-weight: bold;
-    background-color: $color-primary;
+    background-color: $color-highlight;
     color: $color-white;
     padding: 0.75rem 4rem;
     border: none;
@@ -82,11 +82,11 @@ input[type="button"] {
     font-family: $font-family-base;
 
     &:hover {
-        background-color: $color-primary-dark;
+        background-color: $color-highlight-dark;
     }
 
     &:active {
-        background-color: $color-primary-darker;
+        background-color: $color-highlight-darker;
     }
 }
 

@@ -11,10 +11,10 @@ section {
     padding-bottom: 4rem;
 }
 
+// mixin
+@import "mixin/img.scss";
+
 // component 元件
-@import "component/eventcard";
-@import "component/itemcard";
-@import "component/newscard";
 
 // layout 共用nav / footer
 @import "layout/nav";

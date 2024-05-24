@@ -1,5 +1,4 @@
 header {
-    display: none;
     position: fixed;
     width: 100%;
     left: 0;
@@ -7,7 +6,6 @@ header {
     z-index: 50;
 }
 nav {
-    background-color: #000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,6 +31,10 @@ nav .nav-logo img {
 nav .navbar {
     display: flex;
     gap: 3rem;
+    i {
+        color: #fff;
+        display: none;
+    }
 }
 nav .navbar li {
     position: relative;
@@ -53,7 +55,7 @@ nav .navbar li:hover > .subnav {
 nav .navbar li a {
     color: #fff;
 }
-nav .navbar li:last-child {
+nav .navbar .nav-member {
     margin-left: 5px;
     position: relative;
     ::before {
@@ -81,5 +83,24 @@ nav .hb {
         width: 80%;
         height: 2px;
         background-color: #fff;
+    }
+    nav .navbar {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        
+        li {
+            display: flex;
+            text-align: center;
+            a {
+                flex-grow: 2;
+            }
+        }
+        i  {
+            display: block;
+        }
     }
 }

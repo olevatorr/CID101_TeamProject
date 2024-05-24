@@ -666,7 +666,6 @@ section {
 }
 
 header {
-  display: none;
   position: fixed;
   width: 100%;
   left: 0;
@@ -675,7 +674,6 @@ header {
 }
 
 nav {
-  background-color: #000;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -705,6 +703,10 @@ nav .navbar {
   display: flex;
   gap: 3rem;
 }
+nav .navbar i {
+  color: #fff;
+  display: none;
+}
 
 nav .navbar li {
   position: relative;
@@ -729,11 +731,11 @@ nav .navbar li a {
   color: #fff;
 }
 
-nav .navbar li:last-child {
+nav .navbar .nav-member {
   margin-left: 5px;
   position: relative;
 }
-nav .navbar li:last-child ::before {
+nav .navbar .nav-member ::before {
   content: "";
   position: absolute;
   width: 1px;
@@ -759,6 +761,24 @@ nav .hb {
     width: 80%;
     height: 2px;
     background-color: #fff;
+  }
+  nav .navbar {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 100px;
+    left: 0;
+    width: 100%;
+  }
+  nav .navbar li {
+    display: flex;
+    text-align: center;
+  }
+  nav .navbar li a {
+    flex-grow: 2;
+  }
+  nav .navbar i {
+    display: block;
   }
 }
 footer {

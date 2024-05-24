@@ -1,0 +1,15 @@
+@media screen and (max-width:$breakpoint-sm){
+    .section-eventTitle{
+        background: url("https://picsum.photos/1200/800/?random=10");
+    }
+    .section-eventTitle .container .title h1{
+        font-size: $font-size-h3;
+        font-family: $font-family-base;
+        letter-spacing: $letter-spacing-base;
+    }
+    .title{
+        height: 80vh;
+        min-height: 800px;
+
+    }
+}

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +12,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <!-- font awesome -->
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/plugin/jquery-3.7.1.js"></script>
 </head>
 
 <body>
@@ -61,7 +59,7 @@
                 <div>
                     <h3>網站內容</h3>
                     <div class="piechart">
-                        <canvas id="myChart" width="200" height="150"></canvas>
+                        <canvas id="myChart" width="250" height="150"></canvas>
                         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
                         <script>
                             let data = [
@@ -72,10 +70,8 @@
                                 { label: "小遊戲", data: 5, color: '#31356E' }
                             ];
 
-                            let total = data.reduce((sum, item) => sum + item.data, 0);
-                            let percentages = data.map(item => (item.data / total * 100).toFixed(1));
-
-                            let labels = data.map(item => item.label);
+                            let dataNum = data.map(item => item.data);
+                            let labels = data.map(item => item.label + ' ' + item.data + '%');
                             let colors = data.map(item => item.color);
 
                             let ctx = document.getElementById('myChart').getContext('2d');
@@ -84,7 +80,7 @@
                                 data: {
                                     labels: labels,
                                     datasets: [{
-                                        data: percentages,
+                                        data: dataNum,
                                         backgroundColor: colors,
                                         borderColor: 'rgba(0,0,0,0.1)'
                                     }]
@@ -96,18 +92,10 @@
                                             position: 'right',
                                             labels: {
                                                 usePointStyle: true,
-                                                generateLabels: (chart) => {
-                                                    const datasets = chart.data.datasets;
-                                                    return chart.data.labels.map((label, i) => ({
-                                                        text: `${label} (${datasets[0].data[i]}%)`,
-                                                        fillStyle: datasets[0].backgroundColor[i]
-                                                    }));
-                                                },
-                                                color: '#fff',
-                                                family: "'Inconsolata','jf open 粉圓 2.0'"
+                                                color: '#fff'
                                             },
                                             padding: 20
-                                        }
+                                        },
                                     },
                                     layout: {
                                         padding: 0
@@ -131,7 +119,7 @@
                         <input type="text">
                         <button>立即訂閱</button>
                     </div>
-                    <h3>為大家的海洋</h3>
+                    <h3 class="">為大家的海洋</h3>
                     <p>小額捐款</p>
                     <button>立即捐款</button>
                 </div>
@@ -150,6 +138,12 @@
                     </ul>
                 </div>
             </div>
+        </div>
+        <div class="announce">
+            本網站為緯育TibaMe前端工程師班第90期學員專題作品，本網站僅供學習、展示之用。若有侵權將立刻下架，請聯絡@wiedu.com <br>
+            The website is a project work of the 90th batch of front-end engineer students from TibaMe. This website is
+            for learning and demonstration purposes only. If any infringement occurs, it will be taken down immediately.
+            Please contact @wiedu.com
         </div>
     </footer>
 </body>

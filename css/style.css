@@ -957,18 +957,22 @@ footer .footer-subscribe-wrap .footer-h3 {
 .section-index-banner .smoke-left {
   left: 0;
   height: 100%;
+  width: 50%;
 }
 .section-index-banner .smoke-left img {
   height: 100%;
   vertical-align: top;
+  width: 100%;
 }
 .section-index-banner .smoke-right {
   right: 0;
   height: 100%;
+  width: 50%;
 }
 .section-index-banner .smoke-right img {
   height: 100%;
   vertical-align: top;
+  width: 100%;
 }
 .section-index-banner .trash-left {
   left: 0;
@@ -978,6 +982,11 @@ footer .footer-subscribe-wrap .footer-h3 {
   width: 100%;
   vertical-align: top;
 }
+@media screen and (max-width: 991px) {
+  .section-index-banner .trash-left img {
+    height: 80%;
+  }
+}
 .section-index-banner .trash-right {
   right: 0;
   width: 60%;
@@ -985,6 +994,11 @@ footer .footer-subscribe-wrap .footer-h3 {
 .section-index-banner .trash-right img {
   width: 100%;
   vertical-align: top;
+}
+@media screen and (max-width: 991px) {
+  .section-index-banner .trash-right img {
+    height: 80%;
+  }
 }
 
 .section-intro {

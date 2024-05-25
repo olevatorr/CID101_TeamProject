@@ -672,11 +672,6 @@ header {
   top: 0;
   mix-blend-mode: difference;
   z-index: 50;
-  transition: mix-blend-mode 0.3s;
-}
-
-header.blend-unset {
-  mix-blend-mode: unset;
 }
 
 nav {
@@ -708,7 +703,6 @@ nav .navbar {
   display: flex;
   gap: 3rem;
 }
-
 nav .navbar i {
   color: #fff;
   display: none;
@@ -716,33 +710,6 @@ nav .navbar i {
 
 nav .navbar li {
   position: relative;
-}
-
-nav .navbar .subnav-toggle {
-  position: relative;
-}
-
-nav .navbar .subnav {
-  position: absolute;
-  left: 0;
-  top: 100%;
-  max-height: 0;
-  min-width: 160px;
-  padding-top: 10px;
-  overflow: hidden;
-  transition: max-height 0.3s;
-  background-color: transparent;
-}
-nav .navbar .subnav a {
-  color: #fff;
-}
-
-nav .navbar .subnav.active {
-  max-height: 200px;
-}
-
-nav .navbar .subnav li a {
-  color: #000;
 }
 
 nav .navbar li > .subnav {
@@ -754,10 +721,12 @@ nav .navbar li > .subnav {
   padding-top: 10px;
   overflow: hidden;
   transition: 0.3s;
+  display: none; /* 新增這行 */
 }
 
 nav .navbar li:hover > .subnav {
   max-height: 200px;
+  display: block; /* 新增這行 */
 }
 
 nav .navbar li a {
@@ -768,18 +737,13 @@ nav .navbar .nav-member {
   margin-left: 5px;
   position: relative;
 }
-
-nav .navbar .nav-member::before {
+nav .navbar .nav-member ::before {
   content: "";
   position: absolute;
   width: 1px;
   height: 30px;
   background-color: #fff;
   left: -25%;
-}
-
-#nav-switch {
-  display: none;
 }
 
 nav .hb {
@@ -802,15 +766,15 @@ nav .hb {
   }
   nav .navbar {
     position: absolute;
+    display: none;
     flex-direction: column;
     top: 100px;
     left: 0;
     width: 100%;
-    max-height: 0;
-    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8); /* 新增這行 */
   }
-  nav .navbar.active {
-    max-height: 1000px;
+  nav .navbar:active {
+    display: flex;
   }
   nav .navbar li {
     display: flex;
@@ -824,10 +788,7 @@ nav .hb {
   }
   nav .navbar .subnav {
     display: none;
-    background-color: rgba(0, 0, 0, 0.6);
-  }
-  nav .navbar .subnav {
-    background-color: #fff;
+    background-color: rgba(0, 0, 0, 0.6); /* 新增這行 */
   }
 }
 footer {
@@ -879,11 +840,6 @@ footer .wrapper {
   vertical-align: top;
 }
 
-.structure-sign {
-  display: flex;
-  gap: 25px;
-}
-
 .footer-subscribe .sub-input {
   border: 2px solid #E7A600;
   display: flex;
@@ -904,7 +860,7 @@ footer .wrapper {
   background-color: #E7A600;
 }
 
-footer .footer-subscribe-wrap .footer-h3 {
+footer .footer-subscribe-wrap h3:last-child {
   margin-top: 20px;
 }
 
@@ -927,90 +883,4 @@ footer .footer-subscribe-wrap .footer-h3 {
   margin-top: 20px;
   font-family: "Inconsolata", monospace, "jf open 粉圓 2.0", truetype;
   padding: 0 30px;
-}
-
-.section-index-banner {
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  background: url(../img/index/banner1.png) no-repeat 50% 50%/cover;
-  box-sizing: border-box;
-}
-.section-index-banner .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-.section-index-banner .container h1, .section-index-banner .container h2 {
-  color: #fff;
-}
-
-.section-index-banner {
-  position: relative;
-}
-.section-index-banner .smoke-left, .section-index-banner .smoke-right, .section-index-banner .trash-left, .section-index-banner .trash-right {
-  position: absolute;
-  bottom: 0;
-}
-.section-index-banner .smoke-left {
-  left: 0;
-  height: 100%;
-}
-.section-index-banner .smoke-left img {
-  height: 100%;
-  vertical-align: top;
-}
-.section-index-banner .smoke-right {
-  right: 0;
-  height: 100%;
-}
-.section-index-banner .smoke-right img {
-  height: 100%;
-  vertical-align: top;
-}
-.section-index-banner .trash-left {
-  left: 0;
-  width: 60%;
-}
-.section-index-banner .trash-left img {
-  width: 100%;
-  vertical-align: top;
-}
-.section-index-banner .trash-right {
-  right: 0;
-  width: 60%;
-}
-.section-index-banner .trash-right img {
-  width: 100%;
-  vertical-align: top;
-}
-
-.section-intro {
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  background: url(../img/index/banner2.png) no-repeat 50% 50%/cover;
-  box-sizing: border-box;
-}
-.section-intro .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  height: 100%;
-}
-.section-intro .container h3, .section-intro .container p {
-  color: #fff;
-}
-.section-intro .container h3 {
-  margin-bottom: 30px;
-}
-
-.section-debris #map {
-  width: 100%;
-  height: 100%;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

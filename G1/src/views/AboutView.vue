@@ -2,10 +2,10 @@
   <!-- 簡介 -->
   <section class="section section-aboutus">
     <div class="container">
-      <!-- <video autoplay>
-                <source src="./aboutus.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video> -->
+      <video autoplay>
+        <source src="../../public/vedio/aboutus.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
       <p>BLUE ALERT</p>
       <h2>ABOUT US</h2>
       <h3>
@@ -29,12 +29,12 @@
   <section class="section section-purpose">
     <div class="container">
       <div class="row">
-        <div class="col-3">
+        <div class="col-12 col-lg-3">
           <h2>PURPOSE</h2>
           <p>BLUE ALERT</p>
           <h2>願景</h2>
         </div>
-        <div class="col-9">
+        <div class="col-12 col-lg-9">
           <div class="col-12">
             <img src="../../public/img/aboutus/01.png" alt="" />
             <h3>提高公眾認識</h3>
@@ -70,7 +70,7 @@
         我們的捐款功能旨在集結社會各界的力量，共同守護我們的海洋。透過您的支持，我們能夠持續推動海洋保護的各項工作，並擴大我們的影響力。
       </p>
       <div class="row">
-        <div class="col-4">
+        <div class="col-12 col-md-6 col-lg-4">
           <div class="donation-line">
             <span class="material-symbols-outlined"> event </span>
             <p>淨灘活動</p>
@@ -92,7 +92,7 @@
             <p>維護和改進資訊平台，提供最新、準確的海洋垃圾資訊。</p>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-12 col-md-6 col-lg-4">
           <h3>捐款途徑</h3>
           <div class="donation-line">
             <span class="material-symbols-outlined"> contactless </span>
@@ -110,7 +110,7 @@
             <p>歡迎企業捐款和資源共享，共同推動海洋保護。</p>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-12 col-md-6 col-lg-4">
           <div class="donation-line">
             <span class="material-symbols-outlined"> workspace_premium </span>
             <p>全民監督</p>
@@ -136,7 +136,7 @@
       <p>BLUEALERT</p>
       <h3>成員介紹</h3>
       <div class="row">
-        <div class="col-3">
+        <div class="col-12 col-md-6 col-lg-3">
           <img src="../../public/img/aboutus/Eason.png" />
           <h4>Eason</h4>
           <h3>創始人兼首席執行官</h3>
@@ -144,7 +144,7 @@
             全面領導BLUE ALERT的發展和運營，制定戰略目標，推動海洋保護的創新項目和合作夥伴關係。
           </p>
         </div>
-        <div class="col-3">
+        <div class="col-12 col-md-6 col-lg-3">
           <img src="../../public/img/aboutus/Fred.png" />
           <h4>Fred</h4>
           <h3>技術總監</h3>
@@ -152,7 +152,7 @@
             負責資訊平台的開發與維護，分析海洋垃圾數據，提供技術支持，確保平台運行順暢並保持信息的準確性。
           </p>
         </div>
-        <div class="col-3">
+        <div class="col-12 col-md-6 col-lg-3">
           <img src="../../public/img/aboutus/Amber.png" />
           <h4>Amber</h4>
           <h3>市場總監</h3>
@@ -160,7 +160,7 @@
             策劃和執行市場營銷策略，推廣"藍色警戒"的品牌和活動，提升公眾對海洋污染問題的認識，增加平台的影響力。
           </p>
         </div>
-        <div class="col-3">
+        <div class="col-12 col-md-6 col-lg-3">
           <img src="../../public/img/aboutus/Sandy.png" />
           <h4>Sandy</h4>
           <h3>教育與活動經理</h3>
@@ -231,6 +231,7 @@
           <div class="col-12">
             <label for="">驗證碼</label>
             <input type="text" placeholder="請輸入驗證碼" />
+            <button>更新驗證碼</button>
           </div>
         </div>
         <div class="row">

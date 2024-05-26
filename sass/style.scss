@@ -9,13 +9,14 @@
 section {
     padding-top: 4rem;
     padding-bottom: 4rem;
+    box-sizing: border-box
 }
 
-// component 元件
-@import "component/eventcard";
-@import "component/itemcard";
-@import "component/newscard";
+// mixin
+@import "mixin/img.scss";
 
+// component 元件
+@import"component/eventcard";
 // layout 共用nav / footer
 @import "layout/nav";
 @import "layout/footer";
@@ -23,3 +24,4 @@ section {
 // page 各頁
 @import "page/index";
 @import "page/aboutus";
+@import "page/member";

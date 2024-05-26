@@ -1,8 +1,3 @@
-@font-face {
-    font-family: 'jf open 粉圓 2.0';
-    src: url('jf-openhuninn-2.0.ttf') format("truetype"),
-}
-
 @mixin heading-styles($font-size, $letter-spacing, $margin-bottom: 0) {
     font-size: $font-size;
     letter-spacing: $letter-spacing;
@@ -33,6 +28,7 @@ h2 {
 
 h3 {
     @include heading-styles($font-size-h3, $letter-spacing-h3);
+    
 }
 
 h4 {

@@ -11,8 +11,7 @@
     display: flex;
     margin-top: 6rem;
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: center;
 }
 .member-logo-box{
     width: 25rem;
@@ -109,4 +108,9 @@
 }
 .member-txt a:nth-last-of-type(1){
     color: #06C755;
+}
+@media screen and (max-width: 576px) {
+    .member-box-img{
+        display: none;
+    }
 }

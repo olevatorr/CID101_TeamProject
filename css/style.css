@@ -871,8 +871,7 @@ footer .footer-subscribe-wrap h3:last-child {
   display: flex;
   margin-top: 6rem;
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
+  justify-content: center;
 }
 
 .member-logo-box {
@@ -985,6 +984,12 @@ footer .footer-subscribe-wrap h3:last-child {
 
 .member-txt a:nth-last-of-type(1) {
   color: #06C755;
+}
+
+@media screen and (max-width: 576px) {
+  .member-box-img {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

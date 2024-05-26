@@ -33,7 +33,7 @@ import { RouterLink, RouterView } from 'vue-router'
         </li>
         <li><a href="#">最新消息</a></li>
         <li class="nav-member">
-          <RouterLink to="/Memeber">會員登入</RouterLink>
+          <RouterLink to="/MemberView">會員登入</RouterLink>
         </li>
       </ul>
     </nav>

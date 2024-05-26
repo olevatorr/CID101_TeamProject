@@ -1,7 +1,8 @@
+@use 'sass:math';
 @mixin create-col($size) {
     @for $i from 1 through 12 {
         .col#{$size}-#{$i} {
-            width: percentage($i / 12);
+            width: math.div($i, 12) * 100%;
         }
     }
 }
@@ -9,7 +10,7 @@
 @mixin create-row-cols($size) {
     @for $i from 1 through 6 {
         .row-cols#{$size}-#{$i}>.col {
-            width: percentage(1 / $i);
+            width: math.div(1, $i) * 100%;
         }
     }
 }

@@ -9,6 +9,7 @@
 section {
     padding-top: 4rem;
     padding-bottom: 4rem;
+    box-sizing: border-box
 }
 
 // mixin
@@ -23,3 +24,4 @@ section {
 // page 各頁
 @import "page/index";
 @import "page/aboutus";
+@import "page/member";

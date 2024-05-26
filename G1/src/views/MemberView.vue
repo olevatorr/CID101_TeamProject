@@ -1,30 +1,32 @@
 <template>
-    <section class="section section-member">
-        <div class="container">
-            <div class="member-box">
-                <div class="member-box-img">
-                    <img src="/img/member/member2.jpg" alt="會員背景圖片" />
-                    <div class="member-logo-box">
-                        <img src="/img/member/member3.png" alt="logo" />
-                        <span>潔淨海洋　綠色明天</span>
-                        <button>加入會員</button>
+    <main>
+        <section class="section section-member">
+            <div class="container">
+                <div class="member-box">
+                    <div class="member-box-img">
+                        <img src="/img/member/member2.jpg" alt="會員背景圖片" />
+                        <div class="member-logo-box">
+                            <img src="/img/member/member3.png" alt="logo" />
+                            <span>潔淨海洋<span></span>綠色明天</span>
+                            <button>加入會員</button>
+                        </div>
                     </div>
-                </div>
-                <div class="member-txt">
-                    <div class="member-login">
-                        <label>帳號</label>
-                        <input type="text" />
-                        <label>密碼</label>
-                        <input type="password" name="" id="" />
+                    <div class="member-txt">
+                        <div class="member-login">
+                            <label>帳號</label>
+                            <input type="text" />
+                            <label>密碼</label>
+                            <input type="password" name="" id="" />
+                        </div>
+                        <button>登入</button>
+                        <a href="#">忘記密碼?</a>
+                        <p>其他登入方式</p>
+                        <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-line"></i></a>
                     </div>
-                    <button>登入</button>
-                    <a href="#">忘記密碼?</a>
-                    <p>其他登入方式</p>
-                    <a href="#"><i class="fa-brands fa-google-plus"></i></a>
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-line"></i></a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 </template>

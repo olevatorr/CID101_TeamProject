@@ -5,7 +5,7 @@ import { RouterLink, RouterView } from 'vue-router'
 <template>
   <header :class="{ 'blend-unset': isMenuOpen }">
     <nav>
-      <RouterLink to="/home">
+      <RouterLink to="/">
         <div class="nav-logo">
           <img src="../public/img/LOGO-white.png" alt="BLUE ALER 藍色警戒">
         </div>

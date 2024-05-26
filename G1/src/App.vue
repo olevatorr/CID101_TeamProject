@@ -16,7 +16,9 @@ import { RouterLink, RouterView } from 'vue-router'
         <span></span>
       </div>
       <ul class="navbar" :class="{ 'active': isMenuOpen }">
-        <li><a href="#">關於我們</a></li>
+        <li>
+          <RouterLink to="/about">關於我們</RouterLink>
+        </li>
         <li class="subnav-toggle" @click="toggleSubmenu">
           <a href="#">教育中心</a>
           <i class="fa-solid" :class="{ 'fa-caret-down': !isSubmenuOpen, 'fa-caret-up': isSubmenuOpen }"></i>

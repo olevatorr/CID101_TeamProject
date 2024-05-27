@@ -43,8 +43,8 @@
         </h3>
         <div class="row">
           <div class="col-12 col-lg-6">
-            <ul class="debris-sort">
-              <li v-for="sort in hebrisSort">
+            <ul class="debris-sort" v-for="sort in hebrisSort" :key="sort.id">
+              <li>
                 <span class="material-symbols-outlined">line_end</span> {{ sort.area }}
               </li>
             </ul>

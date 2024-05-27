@@ -93,6 +93,7 @@ onMounted(() => {
         </li>
         <li>
           <RouterLink to="/NewsView">最新消息</RouterLink>
+          <!-- test -->
         </li>
         <li class="nav-member">
           <RouterLink to="/Member">會員登入</RouterLink>

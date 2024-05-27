@@ -11,10 +11,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "chart.js": "^4.4.3",
-    "d3": "^7.9.0",
     "pinia": "^2.1.7",
-    "topojson-client": "^3.1.0",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
   },

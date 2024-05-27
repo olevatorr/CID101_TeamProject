@@ -28,9 +28,14 @@ const router = createRouter({
       component: () => import('../views/MemberView.vue')
     },
     {
-      path: '/KnowledgeView',
+      path: '/Knowledge',
       name: 'Knowledge',
       component: () => import('../views/KnowledgeView.vue')
+    },
+    {
+      path: '/NewsView',
+      name: 'NewsView',
+      component: () => import('../views/NewsView.vue')
     }
   ]
 })

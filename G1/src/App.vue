@@ -78,7 +78,7 @@ onMounted(() => {
           <RouterLink to="/about">關於我們</RouterLink>
         </li>
         <li class="subnav-toggle" @click="toggleSubmenu">
-          <RouterLink to="/KnowledgeView">教育中心</RouterLink>
+          <RouterLink to="/Knowledge">教育中心</RouterLink>
           <i class="fa-solid" :class="{ 'fa-caret-down': !isSubmenuOpen, 'fa-caret-up': isSubmenuOpen }"></i>
           <ul class="subnav" :class="{ 'active': isSubmenuOpen }">
             <li><a href="">教育</a></li>
@@ -91,8 +91,12 @@ onMounted(() => {
         <li>
           <RouterLink to="/events">活動</RouterLink>
         </li>
-        <li><a href="#">最新消息</a></li>
-        <li class="nav-member"><RouterLink to="/Member">會員登入</RouterLink></li>
+        <li>
+          <RouterLink to="/NewsView">最新消息</RouterLink>
+        </li>
+        <li class="nav-member">
+          <RouterLink to="/Member">會員登入</RouterLink>
+        </li>
       </ul>
     </nav>
   </header>

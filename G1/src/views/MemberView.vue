@@ -1,13 +1,13 @@
 <template>
     <main class="body-member">
         <section class="section section-member">
-            <div class="containerori">
+            <div class="container">
                 <div class="member-box col-md-12">
                     <div class="member-box-img col-sm-6 col-md-6">
                         <img src="../../public/img/member/member2.jpg" alt="會員背景圖片">
                         <div class="member-logo-box">
                             <img src="../../public/img/member/member3.png" alt="logo">
-                            <span>潔淨海洋綠色明天</span>
+                            <span>潔淨海洋&emsp;綠色明天</span>
                         </div>
                     </div>
                     <div class="member-txt col-sm-6 col-md-6">
@@ -18,8 +18,8 @@
                             <input type="password" name="" id="">
                         </div>
                         <div class="member-button">
-                            <button>登入</button>
-                            <button>加入會員</button>
+                            <button>&emsp;&emsp;登入&emsp;&emsp;</button>
+                            <button class="member-btn">加入會員</button>
                         </div>
                         <a href="#" class="forget">忘記密碼?</a>
                         <p>其他登入方式</p>

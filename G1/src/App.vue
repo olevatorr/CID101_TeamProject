@@ -1,5 +1,63 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import { ref, onMounted } from 'vue';
+import { RouterLink, RouterView } from 'vue-router';
+import Chart from 'chart.js/auto';
+
+const isMenuOpen = ref(false);
+const isSubmenuOpen = ref(false);
+
+const toggleMenu = () => {
+  isMenuOpen.value = !isMenuOpen.value;
+};
+
+const toggleSubmenu = () => {
+  isSubmenuOpen.value = !isSubmenuOpen.value;
+};
+
+const data = [
+  { label: "捐款", data: 30, color: '#6CE5E8' },
+  { label: "教育中心", data: 15, color: '#41B8D5' },
+  { label: "淨攤活動", data: 30, color: '#2D8BBA' },
+  { label: "商城", data: 20, color: '#2F5F98' },
+  { label: "小遊戲", data: 5, color: '#31356E' }
+];
+
+const myChart = ref(null);
+
+onMounted(() => {
+  const dataNum = data.map(item => item.data);
+  const labels = data.map(item => item.label + ' ' + item.data + '%');
+  const colors = data.map(item => item.color);
+
+  const ctx = myChart.value.getContext('2d');
+  new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+      labels: labels,
+      datasets: [{
+        data: dataNum,
+        backgroundColor: colors,
+        borderColor: 'rgba(0,0,0,0.1)'
+      }]
+    },
+    options: {
+      maintainAspectRatio: false,
+      plugins: {
+        legend: {
+          position: 'right',
+          labels: {
+            usePointStyle: true,
+            color: '#fff'
+          },
+          padding: 20
+        },
+      },
+      layout: {
+        padding: 0
+      }
+    }
+  });
+});
 </script>
 
 <template>
@@ -32,9 +90,7 @@ import { RouterLink, RouterView } from 'vue-router'
           <RouterLink to="/events">活動</RouterLink>
         </li>
         <li><a href="#">最新消息</a></li>
-        <li class="nav-member">
-          <RouterLink to="/Memeber">會員登入</RouterLink>
-        </li>
+        <li class="nav-member"><RouterLink to="/Member">會員登入</RouterLink></li>
       </ul>
     </nav>
   </header>
@@ -56,8 +112,7 @@ import { RouterLink, RouterView } from 'vue-router'
         <div>
           <h3>網站內容</h3>
           <div class="piechart">
-            <canvas id="myChart" width="250" height="150"></canvas>
-
+            <canvas ref="myChart" width="250" height="150"></canvas>
           </div>
           <div class="structure-sign">
             <img src="../public/img/footer/pie1.png" alt="">
@@ -104,6 +159,80 @@ import { RouterLink, RouterView } from 'vue-router'
     </div>
   </footer>
 </template>
+
+<!-- 
+<script>
+import { ref, onMounted } from 'vue';
+import Chart from 'chart.js/auto';
+
+export default {
+  setup() {
+    const isMenuOpen = ref(false);
+    const isSubmenuOpen = ref(false);
+
+    const toggleMenu = () => {
+      isMenuOpen.value = !isMenuOpen.value;
+    };
+
+    const toggleSubmenu = () => {
+      isSubmenuOpen.value = !isSubmenuOpen.value;
+    };
+
+    const data = [
+      { label: "捐款", data: 30, color: '#6CE5E8' },
+      { label: "教育中心", data: 15, color: '#41B8D5' },
+      { label: "淨攤活動", data: 30, color: '#2D8BBA' },
+      { label: "商城", data: 20, color: '#2F5F98' },
+      { label: "小遊戲", data: 5, color: '#31356E' }
+    ];
+
+    const myChart = ref(null);
+
+    onMounted(() => {
+      const dataNum = data.map(item => item.data);
+      const labels = data.map(item => item.label + ' ' + item.data + '%');
+      const colors = data.map(item => item.color);
+
+      const ctx = myChart.value.getContext('2d');
+      new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+          labels: labels,
+          datasets: [{
+            data: dataNum,
+            backgroundColor: colors,
+            borderColor: 'rgba(0,0,0,0.1)'
+          }]
+        },
+        options: {
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              position: 'right',
+              labels: {
+                usePointStyle: true,
+                color: '#fff'
+              },
+              padding: 20
+            },
+          },
+          layout: {
+            padding: 0
+          }
+        }
+      });
+    });
+
+    return {
+      isMenuOpen,
+      isSubmenuOpen,
+      toggleMenu,
+      toggleSubmenu,
+      myChart
+    };
+  }
+};
+</script> -->
 
 <style lang="scss">
 @import './assets/sass/style.scss';

@@ -14,10 +14,8 @@ footer .wrapper {
     }
 }
 @media screen and (max-width: 767px){
-    footer {
-        padding: 0;
-    }
     footer .wrapper{
+        grid-template-columns: 100%;
         grid-template-rows: repeat(4,300px);
     }
 }
